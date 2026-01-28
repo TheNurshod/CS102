@@ -96,10 +96,21 @@
 //    }
 //}
 //9th problem
-//import java.util.Scanner;
-//public class Week1_lab1 {
-//    public static void main(String[] args) {
-//        System.out.println("please enter 3 integers ");
-//        int number = input.nextInt();
-//    }
-//}
+import java.util.Scanner;
+public class Week1_lab1 {
+    public static void main(String[] args) {
+        System.out.println("please enter 1st ");
+        Scanner input= new Scanner(System.in);
+        int num1 = input.nextInt();
+        System.out.println("please enter 2nd ");
+        int num2 = input.nextInt();
+        System.out.println("please enter 3rd ");
+        int num3 = input.nextInt();
+        int min= Math.min(Math.min(num1,num2),num3);
+        int max= Math.max(Math.max(num1,num2),num3);
+        int sum= num1+num2 +num3;
+        int middle = sum-max-min ;
+        System.out.print(min+"," +max+ "," +middle+ "," +sum);
+
+    }
+}
